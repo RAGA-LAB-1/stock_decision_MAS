@@ -1,4 +1,4 @@
-# stock_decision_MAS In RAGA Lab
+# stock_decision_MAS in RAGA Lab
 ## MAS : Multi Agent System  
 
 ---
