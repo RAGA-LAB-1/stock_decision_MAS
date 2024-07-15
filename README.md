@@ -21,7 +21,7 @@
 ## 실행 방법  
 　　　1. Run requirment.txt   
 　　　2. Setting OPENAI_API_KEY   
-　　　3. Run brain_module.py (Input : final_report.txt)     
+　　　3. Run brain_module.py (Input : total_report.txt)     
 　　　>>> Crew1 & Crew2 통합 후 main.py 실행 가능하게 개선중  
 
 ---  
