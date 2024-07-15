@@ -6,16 +6,16 @@
 </p>  
 
 ---
-## Team Rolo & Team member  
+## Team Role & Team members  
 
 ### 1. code develop : 코드 최적화를 위한 개발팀  
-　　　a. 팀원 : 최현우, 김지우, 김대선  
+　　　a. member : 최현우, 김지우, 김대선  
 
 ### 2. Prompt engineering : metric 설정과 보다 나은 결과를 위한 프롬프트 테스트 팀  
-　　　a. 팀원 : 최현우, 김지우, 박현아, 변상규  
+　　　a. member : 최현우, 김지우, 박현아, 변상규  
 
 ### 3. Tuned sLLM develop : 뇌 모듈 및 Agent 별 튜닝된 sLLM 적용을 위한 개발팀  
-　　　a. 팀원 : 최현우, 김한솔, 최성은  
+　　　a. member : 최현우, 김한솔, 최성은  
 
 ---  
 ## 실행 방법  
