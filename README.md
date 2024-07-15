@@ -15,9 +15,9 @@
 
 ---  
 ## 실행 방법  
-　　　1. Run requirment.txt 
-　　　2. Setting OPENAI_API_KEY 
-　　　>>> Crew1 & Crew2 통합 후 main.py 실행 가능하게 개선중
+　　　1. Run requirment.txt   
+　　　2. Setting OPENAI_API_KEY   
+　　　>>> Crew1 & Crew2 통합 후 main.py 실행 가능하게 개선중  
 
 ---  
 
