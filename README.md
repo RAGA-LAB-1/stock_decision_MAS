@@ -1,6 +1,10 @@
 # stock_decision_MAS in RAGA Lab
 ## MAS : Multi Agent System  
 
+<p align="center">
+ <img src = "./img/Autonomous Agent Brain archi.png">
+</p>  
+
 ---
 ## Team Rolo & Team member  
 
