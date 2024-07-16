@@ -1,4 +1,4 @@
-import os
+import os, asyncio
 from dotenv import load_dotenv
 
 load_dotenv
@@ -54,10 +54,12 @@ crew = Crew(
     memory=True,
 )
 
-result = crew.kickoff(
-    inputs=dict(
-        company="Salesforce",
-    ),
-)
+async def run_investment_crew():
+    inputs = {
+        "company": "Salesforce"
+    }
+    result = await crew.kickoff_async(inputs=inputs)
+    return result
+
 
 # 각 Task에서 나오는 report.md 들을 append > list, txt.. 포맷으로 저장 > 굳이 저장 안하고 메모리 저장 후 연쇄적 처리하고 싶다
