@@ -21,8 +21,11 @@
 ## 실행 방법  
 　　　1. Run requirment.txt   
 　　　2. Setting OPENAI_API_KEY   
-　　　3. Run brain_module.py (Input : total_report.txt)     
-　　　>>> Crew1 & Crew2 통합 후 main.py 실행 가능하게 개선중  
+　　　(X) 3. Run brain_module.py (Input : total_report.txt)     
+　　　>>> Crew1 & Crew2 통합 후 main.py 실행 가능하게 개선중 통합 완료  
+
+　　　3. Run run.py  
+　　　4. Result : stock_news.md & technical_analysis.md & financial_analysis.md & final_recommendation_report.md  
 
 ---  
 
@@ -35,7 +38,9 @@
   
   ###  **> 뇌모듈**
 　　　d. Left_brain  
-　　　e. Right_brain  
+　　　e. Right_brain    
+　　　f. brain_agent  
+   
 
 ### 2. Task
 　　　a. research : 최신 뉴스 기사에서 내용 분석 및 시장 심리 분석 (Yahoo Finance)  
