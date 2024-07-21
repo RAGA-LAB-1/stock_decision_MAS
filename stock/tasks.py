@@ -25,12 +25,3 @@ class Tasks:
             agent=agent,
             output_file="financial_analysis.md",
         )
-
-    def investment_recommendation(self, agent, context):
-        return Task(
-            description="Based on the research, technical analysis, and financial analysis reports, provide a detailed investment recommendation for {company}'s stock. Include your analysis of the stock's potential risks and rewards, and provide a clear rationale for your recommendation.",
-            expected_output=f"Your final answer MUST be a detailed investment recommendation report to BUY or SELL the stock that includes your analysis of the stock's potential risks and rewards. Provide a clear rationale for your recommendation based on the research, technical analysis, and financial analysis reports.",
-            agent=agent,
-            context=context,
-            output_file="investment_recommendation.md",
-        )

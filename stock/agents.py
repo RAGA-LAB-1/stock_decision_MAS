@@ -40,11 +40,3 @@ class Agents:
                 Tools.insider_transactions,
             ],
         )
-
-    def hedge_fund_manager(self):
-        return Agent(
-            role="Hedge Fund Manager",
-            goal="Manages a portfolio of stocks and makes strategic investment decisions to maximize returns using insights from financial analysts, technical analysts, and researchers.",
-            backstory="You're a seasoned hedge fund manager with a proven track record of making profitable investment decisions. You're known for your ability to manage risk and maximize returns for your clients.",
-            verbose=True,
-        )

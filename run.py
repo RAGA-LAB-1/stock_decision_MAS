@@ -23,16 +23,14 @@ def main():
     researcher = agents.researcher()
     technical_analyst = agents.technical_analyst()
     financial_analyst = agents.financial_analyst()
-    hedge_fund_manager = agents.hedge_fund_manager()
 
     research_task = tasks.research(researcher)
     technical_task = tasks.technical_analysis(technical_analyst)
     financial_task = tasks.financial_analysis(financial_analyst)
-    recommend_task = tasks.investment_recommendation(hedge_fund_manager, [research_task, technical_task, financial_task])
 
     first_crew = Crew(
-        agents=[researcher, technical_analyst, financial_analyst, hedge_fund_manager],
-        tasks=[research_task, technical_task, financial_task, recommend_task],
+        agents=[researcher, technical_analyst, financial_analyst],
+        tasks=[research_task, technical_task, financial_task],
         verbose=2,
         process=Process.hierarchical,
         manager_llm=ChatOpenAI(model="gpt-4o"),
