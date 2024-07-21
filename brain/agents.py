@@ -4,12 +4,14 @@ from crewai import Agent
 from pydantic import Field
 
 # moe 구조 > sLLM을 역할을 하는 것 : sLLM 만으로도 LLM의 성능을 따라갈 수 있다.
+# allow_delegation True, false 테스트 진행
 class Brain_agents:
     def left_brain(self):
         return Agent(
             role="Left Brain",
-            goal="Manage your stock portfolio and collaborate with right_brain to make investment decisions based on logical analysis, taking as input a strategic final report to maximize returns made using insights from financial analysts, technical analysts and researchers.",
+            goal="Based on the reports prepared by the financial analyst, technical analyst, and researcher, conduct a logical analysis and prepare a realistic investment recommendation report. The report should importantly include Entry Points and Price Targets." ,
             backstory="You are the logical left brain of a seasoned hedge fund manager with proven experience making profitable investment decisions. You are known for your ability to manage risk and maximize returns for your clients.",
+            allow_delegation=True,
             verbose=True,
             tools=[]
         )
@@ -17,8 +19,9 @@ class Brain_agents:
     def right_brain(self):
         return Agent(
             role="Right Brain",
-            goal="Manage your stock portfolio and collaborate with left_brain to make investment decisions based on intuitive analysis, taking as input a strategic final report to maximize returns made using the insights of financial analysts, technical analysts and researchers.",
+            goal="Based on the reports written by financial analysts, technical analysts, and researchers, we conduct intuitive analysis and prepare sensible investment recommendation reports. The report must importantly include entry points and target prices.",
             backstory="You are the intuitive right brain of a seasoned hedge fund manager with proven experience making profitable investment decisions. You are known for your ability to manage risk and maximize returns for your clients.",
+            allow_delegation=True,
             verbose=True,
             tools=[]
         )

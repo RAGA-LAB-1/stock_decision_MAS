@@ -50,6 +50,7 @@ def main():
 
     analyze_report_task = second_tasks.analyze_report(left_brain, right_brain, first_result)
 
+    # manager_agent 추가 (뇌모듈 통합 관리자)
     second_crew = Crew(
         agents=[left_brain, right_brain],
         tasks=[analyze_report_task],
