@@ -46,12 +46,14 @@ def main():
 
     left_brain = second_agents.left_brain()
     right_brain = second_agents.right_brain()
+    brain_agent = second_agents.brain_agent()
 
     analyze_report_task = second_tasks.analyze_report(left_brain, right_brain, first_result)
 
     second_crew = Crew(
         agents=[left_brain, right_brain],
         tasks=[analyze_report_task],
+        manager_agent=brain_agent,
         verbose=2,
         process=Process.hierarchical,
         manager_llm=ChatOpenAI(model="gpt-4o"),
