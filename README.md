@@ -26,6 +26,7 @@
 
 　　　3. Run run.py  
 　　　4. Result : stock_news.md & technical_analysis.md & financial_analysis.md & final_recommendation_report.md  
+　　　5. final_report.md : 1. key_financial_metrics, 2. Left Target Price, 3. Right Target Price, 4. Integrate Target Price, 5. Add Insights  
 
 ---  
 
@@ -59,3 +60,13 @@
 　　　incom_stmt : arg(ticker), 주식의 손익계산서를 csv로 가져오는 도구  
 　　　balance_sheet : arg(ticker), 주식의 대차대조표를 csv로 가져오는 도구  
 　　　insider_tranaction : arg(ticker), 주식의 내부 거래를 csv로 가져오는 도구  
+　　　get_key_metric : arg(ticker), DBS의 Key Financial Metrics 지표를 불러오는 도구  
+
+### 4. Update (이전 기록 확인 후 추가 예정)  
+
+　　　a. 24.07.23 : Integrate Crew 1 + Crew 2, Changed async Crew 1
+
+　　　b. 24.07.29 : Integrate Hyunwoo & Daesun' code
+
+　　　c. 24.07.30 : Add DBS's Metrics, Update Prompt, Update Data Process 
+
